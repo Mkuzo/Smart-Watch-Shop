@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom"
 import me from '../assets/me.png'
 import { useState } from "react"
+import logo from '../assets/logo.png'
 export default function Nav(){
     const navigate = useNavigate()
     const [showNav,setShowNav] = useState(false)
@@ -31,7 +32,9 @@ export default function Nav(){
         <div>
             <div className="navigation">
                 <div className="nav">
-                    <h1>Timups</h1>
+                    <div className="nav-image">
+                        <img src={logo} alt="" />
+                    </div>
                     <ul>
                         <li onClick={handleHome}>Home</li>
                         <li onClick={handleAbout}>About</li>
@@ -44,7 +47,7 @@ export default function Nav(){
             </div>
             <div className="smaller-device">
                 <div className="smaller-text">
-                    <h1>Timups</h1>
+                    <img src={logo} alt="" />
                 </div>
                 <div className="smaller-img">
                     <div className="icon">

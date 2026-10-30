@@ -20,11 +20,20 @@
   /* background: radial-gradient(circle,top,blue,black); */
   /* background: linear-gradient(45%,blue,black); */
 }
-.nav h1{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.nav-image{
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
   /* width: 48%;
   height: 100%; */
   /* margin-top: 30px; */
+  width: 48%;
+  height: 100%;
+  /* background-color: red; */
+}
+.nav-image img{
+  width: 100px;
+  height: 100%;
+  /* background-color: red; */
+  object-fit: cover;
 }
 .nav ul{
   display: flex;
@@ -216,7 +225,7 @@ h1{
   flex-direction: column;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.nav img{
+.nav ul img{
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -342,6 +351,11 @@ h1{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin: 50px;
   cursor: pointer;
+}
+.smaller-text img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 @media screen and (max-width: 800px) {
   .navigation{
