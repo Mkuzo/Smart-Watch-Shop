@@ -8,7 +8,6 @@
   height: auto;
   /* background-color: red; */
   background-color: white;
-
 }
 .nav{
   width: 97%;
@@ -271,4 +270,154 @@ h1{
   font-size: 1.5rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin:20px;
+}
+.smaller-device{
+  width: 97%;
+  height: 60px;
+  /* background-color: red; */
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  border-radius: 5px;
+  position: relative;
+  display: none;
+}
+.smaller-img{
+  width: 60%;
+  height: 70px;
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.icon{  
+  width: 48%;
+  height: 100%;
+  /* background-color:#0b1f3a; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon i{
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.icon-image{
+  width: 50px;
+  height: 50px;
+  /* background-color: rgb(11, 115, 206); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-image img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.smaller-text{
+  width: 30%;
+  height: 100%;
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.drop-down{
+  width: 400px;
+  height: 87vh;
+  background-color: rgb(242, 228, 203);
+  position: absolute;
+  top: 100%;
+  right: 0;
+  border-radius: 5px;
+}
+.drop-down ul li{
+  list-style: none;
+  font-size: 1.5rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 50px;
+  cursor: pointer;
+}
+@media screen and (max-width: 800px) {
+  .navigation{
+    display: none;
+  }
+  .smaller-device{
+    width: 100%;
+    height: 60px;
+    /* background-color: red; */
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    border-radius: 5px;
+    position: relative;
+    /* display: none; */
+  }
+  .about{
+    width: 97%;
+    height: auto;
+    background-color: rgb(242, 228, 203);
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .about-image{
+    width: 100%;
+    height: 100%;
+  }
+  .about-text {
+    /* background-color: red; */
+    width: 100%;
+  }
+  .about-text p{
+    font-size: 1.3rem;
+    margin-left: 10px;
+  }
+  .image{
+    width: 100%;
+    height: 100%;
+  }
+  .banner{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .card{
+    flex-wrap: wrap;
+  }
+  .text{
+    width: 100%;
+  }
+  .image{
+    width: 100%;
+    margin-top: 10px;
+  }
+  .image img{
+    border-radius: 10px;
+  }
+}
+@media screen and (max-width: 1032px){
+  .card-container{
+    width: 477px;
+    padding: 10px;
+    height: 480px;
+  }
+  .p p{
+    font-size: 2rem;
+  }
+  .text-container button{
+    font-size: 2rem;
+  }
 }

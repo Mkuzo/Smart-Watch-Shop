@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
@@ -8,10 +8,14 @@ import Nav from './Componet/Nav'
 // import About from './Page/About'
 import AppRoute from './Componet/AppRoute'
 import { createContext } from 'react'
+// import { useEffect } from 'react'
 export const context = createContext()
 function App() {
   const [count, setCount] = useState(0)
   const [store,setStore] = useState([])
+  useEffect(function(){
+    localStorage.setItem('storing',JSON.stringify(store))
+  },[store])
   return (
     // <>
      <context.Provider value={{store,setStore}}>
