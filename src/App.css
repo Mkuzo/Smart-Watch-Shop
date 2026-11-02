@@ -357,6 +357,12 @@ h1{
   height: 100%;
   object-fit: cover;
 }
+.active{
+  background-color: orangered;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
 @media screen and (max-width: 800px) {
   .navigation{
     display: none;
